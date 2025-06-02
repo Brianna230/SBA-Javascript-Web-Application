@@ -1,0 +1,29 @@
+body{
+    background-color: #D30000 !important;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    text-align: center;
+    color:#FEC20C !important;
+}
+
+input[type=search]{
+width:40%;
+display: block;
+margin: 0 auto;
+
+}
+
+button{
+    width:40%;
+    display:block;
+    margin: 0 auto !important;
+}
+
