@@ -1,8 +1,7 @@
-
+import {Fetch} from "/fetch.js"
 async function getPokemon() {
     const PokemonName = document.getElementById("PokeSearch").value;
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${PokemonName}`)
-    const data = await response.json()
+    const data = await Fetch(PokemonName)
     console.log(data)
     const PokemonSprite = data.sprites.front_default;
     const PokeImgsElement = document.querySelector(".poke-img");
@@ -16,8 +15,8 @@ async function getPokemon() {
     console.log(data.stats[0].base_stat)
     PokemonContainer.appendChild(Pokemonhp)
     console.log(PokemonContainer)
-   
 
 }
- getPokemon()
+window.getPokemon = getPokemon;
+getPokemon()
 
