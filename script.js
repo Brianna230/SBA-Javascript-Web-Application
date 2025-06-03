@@ -17,6 +17,7 @@ async function getPokemon() {
     console.log(PokemonContainer)
 
 }
-window.getPokemon = getPokemon;
+// window.getPokemon = getPokemon;
+const PokemonButton = document.getElementById("pokeButton").addEventListener('click',getPokemon)
 getPokemon()
 
