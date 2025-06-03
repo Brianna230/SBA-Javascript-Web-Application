@@ -1,8 +1,6 @@
-import {Fetch} from "/fetch.js"
+
 async function getPokemon() {
-    const PokemonName = document.getElementById("PokeSearch").value || "Pikachu";
-    const fetchData = await Fetch(PokemonName)
-    console.log(fetchData)
+    const PokemonName = document.getElementById("PokeSearch").value;
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${PokemonName}`)
     const data = await response.json()
     console.log(data)
