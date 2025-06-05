@@ -33,7 +33,7 @@ async function getPokemon() {
     let PokemonDefense = document.getElementById("defense")
     newPokemonDefense.id = "defense"
     console.log(newPokemonDefense)
-    newPokemonDefense.textContent = "DEF" + data.stats[2].base_stat
+    newPokemonDefense.textContent = "DEF:" + data.stats[2].base_stat
     PokemonContainer.replaceChild(newPokemonDefense,PokemonDefense)
    }else{
     let PokemonDefense = document.createElement("p")
