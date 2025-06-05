@@ -1,0 +1,1 @@
+In my SBA I use the Pokemon API to create a Pokédex inspired layout. I utilize modules to import and export code like fetching the data for the API and setTimeOut. In the application if the user type in a Pokemon the sprite appear and it stats.
